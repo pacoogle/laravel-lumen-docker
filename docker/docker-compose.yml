@@ -1,0 +1,39 @@
+nginx:
+  build: nginx
+  command: nginx -g "daemon off;"
+  links:
+    - php
+  ports:
+    - "8181:80"
+php:
+  build: php
+  volumes:
+    - ../lumen:/var/www
+  working_dir: /var/www/public
+  command: php-fpm
+  links:
+    - db
+  ports:
+    - "9000:9000"
+  environment:
+    APP_ENV: local
+    APP_DEBUG: 'true'
+    APP_KEY: SomeRandomKey!!!
+    APP_LOCALE: en
+    APP_FALLBACK_LOCALE: en
+    DB_CONNECTION: mysql
+    DB_HOST: db
+    DB_DATABASE: lumen
+    DB_USERNAME: lumen
+    DB_PASSWORD: secret
+    MEMCACHED_HOST: cache
+    CACHE_DRIVER: memcached
+db:
+  image: mysql
+  ports:
+    - "3306:3306"
+  environment:
+    MYSQL_ROOT_PASSWORD: secret
+    MYSQL_DATABASE: lumen
+    MYSQL_USER: lumen
+    MYSQL_PASSWORD: secret
