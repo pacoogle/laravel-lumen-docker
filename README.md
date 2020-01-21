@@ -28,3 +28,5 @@ If you use PhpStorm you must configure your IDE:
 - your Lumen/Laravel app root => `/var/www`
 - your Lumen/Laravel app /app root => `/var/www/app`
 - your Lumen/Laravel app /public root => `/var/www/public`
+- open Preferences | Languages & Frameworks | PHP => CLI interpreter
+- add new CLI from Docker => docker_php:latest
