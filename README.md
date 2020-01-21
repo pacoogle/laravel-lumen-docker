@@ -16,3 +16,15 @@ make docker-stop
 
 ## Customization
 Currently in the "lumen" folder you will find the dist 6.2 of Lumen but if you want to customize the dist or use Laravel you can manually configure the docker-compose.yml file indicating where the code of your app resides
+
+## Debugger
+If you use PhpStorm you must configure your IDE:
+- open Preferences | Languages & Frameworks | PHP | Servers
+- add new server named `localhost`
+- set host to `localhost`
+- set port to `8181`
+- enable `use path mapping`
+- configure your absolute path
+- your Lumen/Laravel app root => `/var/www`
+- your Lumen/Laravel app /app root => `/var/www/app`
+- your Lumen/Laravel app /public root => `/var/www/public`
