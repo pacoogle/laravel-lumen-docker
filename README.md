@@ -15,7 +15,7 @@ make docker-stop
 ```
 
 ## Customization
-Currently in the "lumen" folder you will find the dist 6.2 of Lumen but if you want to customize the dist or use Laravel you can manually configure the docker-compose.yml file indicating where the code of your app resides
+Currently in the "lumen" folder you will find the dist 8.X of Lumen but if you want to customize the dist or use Laravel you can manually configure the docker-compose.yml file indicating where the code of your app resides
 
 ## Debugger
 If you use PhpStorm you must configure your IDE:
