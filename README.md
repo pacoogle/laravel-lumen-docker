@@ -1,4 +1,5 @@
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/pacoogle)
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/pacoogle) Thanks in advance if you want to offer me a coffee :-)
+
 
 # laravel-lumen-docker
 Laravel, Lumen platform dockerization
